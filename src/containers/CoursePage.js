@@ -5,7 +5,7 @@ class CoursePage extends React.Component{
         return(
             <div>
                 <h2>
-                    {this.props.info.title}
+                    helloe
                 </h2>
             </div>
         )

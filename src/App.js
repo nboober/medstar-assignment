@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch,Route } from 'react-router-dom'
+import {Switch,Route} from 'react-router-dom'
 import courses from './courses/courses'
 import SearchBar from './components/SearchBar'
 import Filter from './components/Filter'
@@ -24,21 +24,24 @@ class App extends React.Component{
 
   render(){
     return(
-      <div>
+      
         <Switch>
-          
-          <Route exact to='/'>
-            <SearchBar/>
-            <Filter/>
-            <CourseContainer courses={this.state.courses} view={this.viewSelectedCourse}/>
-          </Route>
 
-          <Route exact to='/course'>
+          <Route exact path='/' render={()=>{
+            return <div>
+                    <SearchBar/>
+                    <Filter/>
+                    <CourseContainer courses={this.state.courses} view={this.viewSelectedCourse}/>
+                  </div>
+          }}/>
+          
+          <Route exact path='/course'>
             <CoursePage info={this.state.selectedCourse}/>
           </Route>
 
+
         </Switch>
-      </div>
+
     )
   }
 }
