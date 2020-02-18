@@ -3,11 +3,18 @@ import React from 'react'
 class CoursePage extends React.Component{
     render(){
         return(
-            <div>
-                <h2>
-                    helloe
-                </h2>
-            </div>
+            <>
+                {this.props.info ? 
+                <div>
+                    <h2>
+                        {this.props.info.title}
+                    </h2>
+                    <p>
+                        {this.props.info.description}
+                    </p>
+                </div>
+                : null}
+            </>
         )
     }
 }
