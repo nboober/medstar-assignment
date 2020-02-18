@@ -1,17 +1,24 @@
 import React from 'react';
-import courses from './courses'
+import courses from './courses/courses'
+import SearchBar from './components/SearchBar'
+import Filter from './components/Filter'
+import CourseContainer from './containers/CourseContainer'
 import './App.css';
 
 class App extends React.Component{
-
-  componentDidMount = () => {
-    console.log(courses)
+  constructor(){
+    super();
+    this.state={
+      courses: courses
+    }
   }
 
   render(){
     return(
       <div>
-        hello
+        <SearchBar/>
+        <Filter/>
+        <CourseContainer courses={this.state.courses}/>
       </div>
     )
   }
