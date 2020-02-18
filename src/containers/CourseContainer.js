@@ -6,7 +6,7 @@ class CourseContainer extends React.Component{
         return(
             <div>
                 {this.props.courses ? this.props.courses.map(course=>{
-                    return <Course key={course.title} course={course}/>
+                    return <Course key={course.id} course={course}/>
                 })
             : null}
             </div>
