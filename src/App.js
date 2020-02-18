@@ -11,9 +11,16 @@ class App extends React.Component{
   constructor(){
     super();
     this.state={
+      searchTerm: "",
       courses: courses,
       selectedCourse: ""
     }
+  }
+
+  searchCourses = (event) => {
+    this.setState({
+      searchTerm: event.target.value
+    })
   }
 
   viewSelectedCourse = (course) => {
@@ -29,9 +36,11 @@ class App extends React.Component{
 
           <Route exact path='/' render={()=>{
             return <div>
-                    <SearchBar/>
+                    <SearchBar search={this.searchCourses}/>
                     <Filter/>
-                    <CourseContainer courses={this.state.courses} view={this.viewSelectedCourse}/>
+                    <CourseContainer courses={this.state.courses.filter((course)=>{
+                      return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
+                    })} view={this.viewSelectedCourse}/>
                   </div>
           }}/>
           
