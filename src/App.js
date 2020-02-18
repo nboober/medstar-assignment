@@ -52,7 +52,7 @@ class App extends React.Component{
           <Route exact path='/' render={()=>{
             return <div>
                     <SearchBar search={this.searchCourses}/>
-                    <Filter/>
+                    <Filter filters={this.state.numberOfFilters}/>
                     <CourseContainer courses={this.state.courses.filter((course)=>{
                       return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
                     })} view={this.viewSelectedCourse}/>
