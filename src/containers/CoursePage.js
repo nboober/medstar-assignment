@@ -4,7 +4,9 @@ class CoursePage extends React.Component{
     render(){
         return(
             <div>
-                course page
+                <h2>
+                    {this.props.info.title}
+                </h2>
             </div>
         )
     }

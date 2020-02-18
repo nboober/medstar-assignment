@@ -11,22 +11,30 @@ class App extends React.Component{
   constructor(){
     super();
     this.state={
-      courses: courses
+      courses: courses,
+      selectedCourse: ""
     }
+  }
+
+  viewSelectedCourse = (course) => {
+    this.setState({
+      selectedCourse: course
+    })
   }
 
   render(){
     return(
       <div>
         <Switch>
+          
           <Route exact to='/'>
             <SearchBar/>
             <Filter/>
-            <CourseContainer courses={this.state.courses}/>
+            <CourseContainer courses={this.state.courses} view={this.viewSelectedCourse}/>
           </Route>
 
           <Route exact to='/course'>
-            <CoursePage />
+            <CoursePage info={this.state.selectedCourse}/>
           </Route>
 
         </Switch>
