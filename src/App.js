@@ -39,6 +39,10 @@ class App extends React.Component{
     })
   }
 
+  filterCourses = (event) => {
+    console.log(event.target.value)
+  }
+
   viewSelectedCourse = (course) => {
     this.setState({
       selectedCourse: course
@@ -53,7 +57,7 @@ class App extends React.Component{
           <Route exact path='/' render={()=>{
             return <div>
                     <SearchBar search={this.searchCourses}/>
-                    <Filter filters={this.state.numberOfFilters}/>
+                    <Filter filters={this.state.numberOfFilters} filter={this.filterCourses}/>
                     <CourseContainer courses={this.state.courses.filter((course)=>{
                       return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
                     })} view={this.viewSelectedCourse}/>

@@ -9,7 +9,7 @@ class Filter extends React.Component{
                         {this.props.filters.map((filter)=>{
                             return <div key={filter}>
                                         <label htmlFor={filter} >{filter}</label>
-                                        <input id={filter} name={filter} value={filter} type="checkbox"/>
+                                        <input id={filter} name={filter} value={filter} type="checkbox" onChange={(event)=>this.props.filter(event)}/>
                                     </div>
                         })}
                     </div>
