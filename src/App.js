@@ -12,9 +12,24 @@ class App extends React.Component{
     super();
     this.state={
       searchTerm: "",
+      numberOfFilters: "",
       courses: courses,
       selectedCourse: ""
     }
+  }
+
+  componentDidMount = () => {
+
+    let filter = [];
+
+    courses.map((course)=>{
+      filter.push(course.filter);
+    })
+
+    this.setState({
+      numberOfFilters: filter.flat()
+    })
+
   }
 
   searchCourses = (event) => {
