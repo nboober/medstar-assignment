@@ -13,7 +13,7 @@ class App extends React.Component{
     this.state={
       searchTerm: "",
       numberOfFilters: "",
-      filterTerms: "",
+      filterTerms: [],
       courses: courses,
       selectedCourse: ""
     }
@@ -41,6 +41,28 @@ class App extends React.Component{
 
   filterCourses = (event) => {
     console.log(event.target.value)
+
+    if(this.state.filterTerms.includes(event.target.value)){
+
+      let index = this.state.filterTerms.indexOf(event.target.value);
+      this.state.filterTerms.splice(index,1);
+      let newTermList = this.state.filterTerms;
+
+      this.setState({
+        filterTerms: newTermList
+      })
+
+    }else{
+
+      let array = this.state.filterTerms;
+      array.push(event.target.value);
+
+        this.setState({
+          filterTerms: array
+        })
+
+    }
+
   }
 
   viewSelectedCourse = (course) => {
