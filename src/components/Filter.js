@@ -1,6 +1,27 @@
 import React from 'react'
 
 class Filter extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            filterTerms: ""
+        }
+    }
+
+    componentDidMount = () => {
+        this.setState({
+            filterTerms: this.props.filterTerms
+        },()=>{
+            this.checkCheckBoxes();
+        })
+    }
+
+    checkCheckBoxes = () => {
+        this.state.filterTerms.map(term=>{
+            document.getElementById(term).checked = true
+        })
+    }
+
     render(){
         return(
             <>
