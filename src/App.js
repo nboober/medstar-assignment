@@ -1,6 +1,7 @@
 import React from 'react';
 import {Switch,Route} from 'react-router-dom'
 import allCourses from './courses/courses'
+import NavBar from './components/NavBar'
 import SearchBar from './components/SearchBar'
 import Filter from './components/Filter'
 import CourseContainer from './containers/CourseContainer'
@@ -101,17 +102,27 @@ class App extends React.Component{
 
   render(){
     return(
-      
+      <>
+
+        <NavBar/>
+        
         <Switch>
 
           <Route exact path='/' render={()=>{
-            return <div>
-                    <SearchBar search={this.searchCourses}/>
-                    <Filter filters={this.state.numberOfFilters} filter={this.filterCourses}/>
-                    <CourseContainer courses={this.state.courses ? this.state.courses.filter((course)=>{
-                      return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
-                    }):null} view={this.viewSelectedCourse}/>
-                  </div>
+            return <div style={{width: "80%", margin: "0 auto"}} >
+
+                      <div style={{display: "inline-block", height: "70vh"}}>
+                        <SearchBar search={this.searchCourses}/>
+                        <Filter filters={this.state.numberOfFilters} filter={this.filterCourses}/>
+                      </div>
+
+                      <div style={{display: "inline-block", width: "80%", textAlign: "center"}}>
+                        <CourseContainer courses={this.state.courses ? this.state.courses.filter((course)=>{
+                          return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
+                        }):null} view={this.viewSelectedCourse}/>
+                      </div>
+
+                    </div>
           }}/>
           
           <Route exact path='/course'>
@@ -120,7 +131,7 @@ class App extends React.Component{
 
 
         </Switch>
-
+      </>
     )
   }
 }
