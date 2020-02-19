@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch,Route} from 'react-router-dom'
-import courses from './courses/courses'
+import allCourses from './courses/courses'
 import SearchBar from './components/SearchBar'
 import Filter from './components/Filter'
 import CourseContainer from './containers/CourseContainer'
@@ -14,28 +14,30 @@ class App extends React.Component{
       searchTerm: "",
       numberOfFilters: "",
       filterTerms: [],
-      courses: courses,
+      courses: allCourses,
       selectedCourse: ""
     }
   }
 
   componentDidMount = () => {
-
-    let filter = [];
-
-    courses.map((course)=>{
-      filter.push(course.filter);
-    })
-
-    this.setState({
-      numberOfFilters: filter.flat()
-    })
-
+    this.setFilterValues();
   }
 
   searchCourses = (event) => {
     this.setState({
       searchTerm: event.target.value
+    })
+  }
+
+  setFilterValues = () => {
+    let filter = [];
+
+    allCourses.map((course)=>{
+      filter.push(course.filter);
+    })
+
+    this.setState({
+      numberOfFilters: filter.flat()
     })
   }
 
@@ -50,7 +52,7 @@ class App extends React.Component{
 
       this.setState({
         filterTerms: newTermList
-      })
+      },()=>{this.setCourses()})
 
     }else{
 
@@ -59,9 +61,35 @@ class App extends React.Component{
 
         this.setState({
           filterTerms: array
-        })
+        },()=>{this.setCourses()})
 
     }
+
+  }
+
+  setCourses = () => {
+
+      let newCourseList = [];
+
+      if(this.state.filterTerms.length > 0){
+
+        allCourses.forEach(course=>{
+          if(course.filter.some(filter => this.state.filterTerms.includes(filter))){
+            newCourseList.push(course);
+          }
+        })
+      
+        this.setState({
+          courses: newCourseList
+        })
+        
+      }else{
+        
+        this.setState({
+          courses: allCourses
+        })
+
+      }
 
   }
 
@@ -80,9 +108,9 @@ class App extends React.Component{
             return <div>
                     <SearchBar search={this.searchCourses}/>
                     <Filter filters={this.state.numberOfFilters} filter={this.filterCourses}/>
-                    <CourseContainer courses={this.state.courses.filter((course)=>{
+                    <CourseContainer courses={this.state.courses ? this.state.courses.filter((course)=>{
                       return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
-                    })} view={this.viewSelectedCourse}/>
+                    }):null} view={this.viewSelectedCourse}/>
                   </div>
           }}/>
           
