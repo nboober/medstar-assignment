@@ -110,13 +110,13 @@ class App extends React.Component{
         <Switch>
 
           <Route exact path='/' render={()=>{
-            return <div style={{width: "80%", margin: "0 auto", color: "black"}} >
+            return <div style={{width: "80%", margin: "0 auto", color: "black", paddingTop: '100px'}} >
 
                       <div style={{display: "inline-block", height: "60vh", marginTop: "5%", background: "lightGray", padding: '40px', position:'fixed'}}>
                         <SearchBar search={this.searchCourses}/>
                         <Filter filters={this.state.numberOfFilters} filter={this.filterCourses}/>
                       </div>
-
+                      <h2 style={{textAlign:"center"}}>Courses</h2>
                       <div style={{display: "inline-block", height: "100%", width: "80%", textAlign: "center", float: "right", background: "lightGray", paddingBottom: '100px'}}>
                         <CourseContainer courses={this.state.courses ? this.state.courses.filter((course)=>{
                           return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
