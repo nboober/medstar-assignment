@@ -5,7 +5,7 @@ class CoursePage extends React.Component{
         return(
             <>
                 {this.props.info ? 
-                    <div style={{height: '70vh', width: '80vw', margin: '0 auto', marginTop: '5%'}}>
+                    <div className="coursePage">
                         <h2>
                             {this.props.info.title}
                         </h2>
@@ -14,7 +14,7 @@ class CoursePage extends React.Component{
                             {this.props.info.description}
                         </p>
 
-                        <button style={{width: '150px', margin: '0 auto', marginTop: '2%'}} className="btn btn-primary">
+                        <button id="signUpButton" className="btn btn-primary">
                             Sign Up
                         </button>
 
