@@ -32,12 +32,12 @@ class App extends React.Component{
   setFilterValues = () => {
     let filter = [];
 
-    allCourses.map((course)=>{
+    allCourses.forEach((course)=>{
       filter.push(course.filter);
     })
 
     this.setState({
-      numberOfFilters: filter.flat()
+      numberOfFilters: [...new Set(filter.flat())]
     })
   }
 
