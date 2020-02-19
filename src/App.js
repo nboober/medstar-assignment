@@ -2,6 +2,7 @@ import React from 'react';
 import {Switch,Route} from 'react-router-dom'
 import allCourses from './courses/courses'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import Filter from './components/Filter'
 import CourseContainer from './containers/CourseContainer'
@@ -111,12 +112,12 @@ class App extends React.Component{
           <Route exact path='/' render={()=>{
             return <div style={{width: "80%", margin: "0 auto"}} >
 
-                      <div style={{display: "inline-block", height: "70vh"}}>
+                      <div style={{display: "inline-block", height: "70vh", marginTop: "10%"}}>
                         <SearchBar search={this.searchCourses}/>
                         <Filter filters={this.state.numberOfFilters} filter={this.filterCourses}/>
                       </div>
 
-                      <div style={{display: "inline-block", width: "80%", textAlign: "center"}}>
+                      <div style={{display: "inline-block", width: "80%", textAlign: "center", float: "right", marginTop: "5%"}}>
                         <CourseContainer courses={this.state.courses ? this.state.courses.filter((course)=>{
                           return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
                         }):null} view={this.viewSelectedCourse}/>
@@ -131,6 +132,9 @@ class App extends React.Component{
 
 
         </Switch>
+
+        <Footer/>
+        
       </>
     )
   }

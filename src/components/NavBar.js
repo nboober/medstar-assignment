@@ -1,11 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class NavBar extends React.Component{
     render(){
         return(
-            <div style={{width: "80%", margin: "0 auto"}}>
-                <img src="https://www.medstarhealth.org/content/themes/medstarhealth-specialty-parent/assets/img/logo.png" alt="medstar logo" />
-            </div>
+            <nav className="navbar navbar-light bg-light">
+              <Link className="navbar-brand" to="/">
+                <img src="https://www.medstarhealth.org/content/themes/medstarhealth-specialty-parent/assets/img/logo.png" alt="medstar logo"/>
+              </Link>
+            </nav>
         )
     }
 }

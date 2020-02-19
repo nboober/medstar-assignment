@@ -5,7 +5,7 @@ class SearchBar extends React.Component{
         return(
             <div>
                 Search Our Courses:<br/>
-                <input type="text" onChange={(event)=>this.props.search(event)} placeholder="Course 1"/>
+                <input type="text" onChange={(event)=>this.props.search(event)} placeholder="Course 1"/><br/><br/>
             </div>
         )
     }

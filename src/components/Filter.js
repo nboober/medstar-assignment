@@ -5,11 +5,11 @@ class Filter extends React.Component{
         return(
             <>
                 {this.props.filters ? 
-                    <div>
+                    <div className="form-check">
                         {this.props.filters.map((filter)=>{
                             return <div key={filter}>
-                                        <label htmlFor={filter} >{filter}</label>
-                                        <input id={filter} name={filter} value={filter} type="checkbox" onChange={(event)=>this.props.filter(event)}/>
+                                        <input className="form-check-input" id={filter} name={filter} value={filter} type="checkbox" onChange={(event)=>this.props.filter(event)}/>
+                                        <label className="form-check-label" htmlFor={filter} >{filter}</label>
                                     </div>
                         })}
                     </div>
