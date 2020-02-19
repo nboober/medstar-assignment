@@ -24,7 +24,12 @@
         padding: 40px;
         position: fixed;
         overflow-y: scroll;
+        -ms-overflow-style: none;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+      }
 
     .coursesContainer{
         height: 100%;
