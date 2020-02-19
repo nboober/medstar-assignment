@@ -110,9 +110,9 @@ class App extends React.Component{
         <Switch>
 
           <Route exact path='/' render={()=>{
-            return <div style={{width: "80%", margin: "0 auto"}} >
+            return <div style={{width: "80%", margin: "0 auto", color: "black"}} >
 
-                      <div style={{display: "inline-block", height: "70vh", marginTop: "10%"}}>
+                      <div style={{display: "inline-block", height: "60vh", marginTop: "10%", background: "gray", padding: '40px'}}>
                         <SearchBar search={this.searchCourses}/>
                         <Filter filters={this.state.numberOfFilters} filter={this.filterCourses}/>
                       </div>

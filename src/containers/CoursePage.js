@@ -5,14 +5,14 @@ class CoursePage extends React.Component{
         return(
             <>
                 {this.props.info ? 
-                <div>
-                    <h2>
-                        {this.props.info.title}
-                    </h2>
-                    <p>
-                        {this.props.info.description}
-                    </p>
-                </div>
+                    <div style={{height: '70vh'}}>
+                        <h2>
+                            {this.props.info.title}
+                        </h2>
+                        <p>
+                            {this.props.info.description}
+                        </p>
+                    </div>
                 : null}
             </>
         )
