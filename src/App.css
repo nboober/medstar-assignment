@@ -1,7 +1,101 @@
-@media only screen and (max-width: 1699px) {
+@media only screen and (max-width: 767px) {
+    body{
+        width: 100vw;
+    }
 
+    label{
+        font-size: 1.5rem;
+    }
+    
+    .appBody{
+        margin-top: 25%;        
+    }
+
+    input.form-check-input{
+        transform : scale(1);
+    }
+
+    .coursesContainer{
+        padding-bottom: 100px;
+    }
+
+    .course{
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .coursePage{
+        margin-top: 25%;
+        padding-bottom: 100px;
+    }
+
+    #signUpButton{
+        margin-bottom: 5%;
+        margin-left: 35%;
+        width: 100px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1699px) {
+    body{
+        width: 100vw;
+        font-size: 2rem;
+    }
+    
+    .appBody{
+        margin-top: 10%;        
+    }
+
+    input.form-check-input{
+        transform : scale(1);
+    }
+
+    .coursesContainer{
+        padding-bottom: 100px;
+        width: 100vw;
+    }
+    
+    .coursePage{
+        margin-top: 15%;
+        padding-bottom: 100px;
+    }
+
+    .coursePage h2{
+        font-size: 5rem;
+    }
+
+    .course{
+        display: inline-block;
+        margin: 10px;
+        height: 200px;
+        overflow-y: hidden;
+    }
+
+    #signUpButton{
+        margin-bottom: 5%;
+        margin-left: 35%;
+        font-size: 2rem;
+        width: 300px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+}
 
 @media only screen and (min-width: 1700px) {
 
