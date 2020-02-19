@@ -69,6 +69,14 @@ let courses = [
         "description": "Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et. Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales. Urna proin viverra consectetur torquent elit nascetur maecenas duis lectus, semper natoque dignissim. Fringilla sed blandit vitae felis non lobortis per justo conubia porta. Parturient nascetur in duis, consequat non neque tellus sem! Penatibus cum tincidunt at! Mattis scelerisque molestie at blandit. Tempus urna malesuada velit vivamus libero eu, molestie scelerisque lobortis consectetur. Consectetur facilisis molestie convallis. Montes cursus himenaeos arcu lacus metus sit parturient dictum conubia nullam condimentum. Cum, condimentum felis ante ante libero iaculis class quam phasellus. Mi habitasse sodales netus tellus praesent adipiscing euismod nam ad scelerisque. Magna, gravida class fermentum sem a ornare aenean curabitur nisl ullamcorper quisque. Dis, et leo sagittis quisque habitant lacinia. Blandit, fringilla torquent in tristique pellentesque. Ipsum eleifend facilisi senectus viverra blandit nisl sem turpis. Habitant placerat fames?"
 
     }
+    ,
+    {
+        id: 10,
+        "title": "Course 10",
+        "filter": ["tutorial", "php course"],
+        "description": "Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et. Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales. Urna proin viverra consectetur torquent elit nascetur maecenas duis lectus, semper natoque dignissim. Fringilla sed blandit vitae felis non lobortis per justo conubia porta. Parturient nascetur in duis, consequat non neque tellus sem! Penatibus cum tincidunt at! Mattis scelerisque molestie at blandit. Tempus urna malesuada velit vivamus libero eu, molestie scelerisque lobortis consectetur. Consectetur facilisis molestie convallis. Montes cursus himenaeos arcu lacus metus sit parturient dictum conubia nullam condimentum. Cum, condimentum felis ante ante libero iaculis class quam phasellus. Mi habitasse sodales netus tellus praesent adipiscing euismod nam ad scelerisque. Magna, gravida class fermentum sem a ornare aenean curabitur nisl ullamcorper quisque. Dis, et leo sagittis quisque habitant lacinia. Blandit, fringilla torquent in tristique pellentesque. Ipsum eleifend facilisi senectus viverra blandit nisl sem turpis. Habitant placerat fames?"
+
+    }
 ]
 
 export default courses

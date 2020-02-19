@@ -5,13 +5,19 @@ class CoursePage extends React.Component{
         return(
             <>
                 {this.props.info ? 
-                    <div style={{height: '70vh'}}>
+                    <div style={{height: '70vh', width: '80vw', margin: '0 auto', marginTop: '5%'}}>
                         <h2>
                             {this.props.info.title}
                         </h2>
-                        <p>
+                        <hr/>
+                        <p style={{marginTop: '5%'}}>
                             {this.props.info.description}
                         </p>
+
+                        <button style={{width: '150px', margin: '0 auto'}} className="btn btn-primary">
+                            Sign Up
+                        </button>
+
                     </div>
                 : null}
             </>
