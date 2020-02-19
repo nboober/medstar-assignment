@@ -1,69 +1,75 @@
-.appBody{
-    width: 80%;
-    margin: 0 auto;
-    color: black;
-    padding-top: 100px;
-}
+@media only screen and (max-width: 1699px) {
 
-.courseTitle{
-    text-align: center;
-}
-
-.sideBar{
-    display: inline-block;
-    height: 60vh;
-    margin-top: 5%;
-    background: lightGray;
-    padding: 40px;
-    position: fixed;
-}
-
-.coursesContainer{
-    height: 100%;
-    width: 80%;
-    text-align: center;
-    float: right;
-    background: lightGray;
-    padding-bottom: 100px;
-}
-
-.course{
-    display: inline-block;
-    margin: 10px;
 }
 
 
-.card:hover{
-    background-color: orange !important;
+@media only screen and (min-width: 1700px) {
+
+    .appBody{
+        width: 80%;
+        margin: 0 auto;
+        color: black;
+        padding-top: 100px;
+    }
+
+    .courseTitle{
+        text-align: center;
+    }
+
+    .sideBar{
+        display: inline-block;
+        height: 60vh;
+        margin-top: 5%;
+        background: lightGray;
+        padding: 40px;
+        position: fixed;
+        overflow-y: scroll;
+    }
+
+    .coursesContainer{
+        height: 100%;
+        width: 80%;
+        text-align: center;
+        float: right;
+        background: lightGray;
+        padding-bottom: 100px;
+    }
+
+    .course{
+        display: inline-block;
+        margin: 10px;
+    }
+
+
+    .card:hover{
+        background-color: orange !important;
+    }
+
+    a:hover{
+        text-decoration: none !important;
+        
+    }
+
+    .coursePage{
+        height: 70vh;
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    #signUpButton{
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
 }
-
-a:hover{
-    text-decoration: none !important;
-    
-}
-
-.coursePage{
-    height: 70vh;
-    width: 80vw;
-    margin: 0 auto;
-    margin-top: 5%;
-}
-
-#signUpButton{
-    width: 150px;
-    margin: 0 auto;
-    margin-top: 2%;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-}
-
-@media only screen and (min-width: 1060px) {
-
-  }
