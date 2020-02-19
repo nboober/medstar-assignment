@@ -4,10 +4,10 @@ class Footer extends React.Component{
     render(){
         return(
             <div>
-                <footer class="page-footer font-small blue">
+                <footer className="page-footer font-small bg-primary">
 
-                <div className="footer-copyright text-center py-3">© 2020 Copyright:
-                    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+                <div className="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+                    <a className="text-white" href="https://www.medstarhealth.org/education/"> MEDSTARHEALTH.ORG</a>
                 </div>
 
                 </footer>
