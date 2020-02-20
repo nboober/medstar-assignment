@@ -175,7 +175,7 @@
         height: 60vh;
         margin-top: 5%;
         background: lightGray;
-        padding: 40px;
+        padding: 10px 40px 10px 40px;
         position: fixed;
         overflow-y: scroll;
         -ms-overflow-style: none;
