@@ -13,7 +13,6 @@ class CoursePage extends React.Component{
                         <p style={{marginTop: '2%'}}>
                             {this.props.info.description}
                         </p>
-
                         <button id="signUpButton" className="btn btn-primary">
                             Sign Up
                         </button>
