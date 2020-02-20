@@ -25,6 +25,16 @@ class App extends React.Component{
     this.setFilterValues();
   }
 
+  showHideSideBar = () => {
+    let sideBar = document.getElementById("sidebar");
+
+    if(sideBar.className === "sideBar"){
+      sideBar.className = "showSideBar"
+    }else{
+      sideBar.className = "sideBar"
+    }
+  }
+
   searchCourses = (event) => {
     this.setState({
       searchTerm: event.target.value
@@ -112,7 +122,9 @@ class App extends React.Component{
           <Route exact path='/' render={()=>{
             return <div className="appBody" >
 
-                      <div className="sideBar">
+                    <img className="filterIcon" src="https://www.freeiconspng.com/uploads/filter-icon-0.png" width="45px" alt="filter icon" onClick={this.showHideSideBar} />
+
+                      <div id="sidebar" className="sideBar">
                         <SearchBar search={this.searchCourses}/>
                         <Filter filters={this.state.numberOfFilters} filter={this.filterCourses} filterTerms={this.state.filterTerms}/>
                       </div>

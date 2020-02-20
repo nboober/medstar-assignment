@@ -16,6 +16,27 @@
         transform : scale(1);
     }
 
+    .filterIcon{
+        /* display: none; */
+        float: right;
+    }
+    
+    .sideBar{
+        /* display: inline-block;
+        height: 60vh;
+        margin-top: 5%;
+        background: lightGray;
+        padding: 40px;
+        position: fixed;
+        overflow-y: scroll;
+        -ms-overflow-style: none; */
+        display: none;
+    }
+
+    .showSideBar{
+        
+    }
+
     .coursesContainer{
         padding-bottom: 100px;
     }
@@ -62,6 +83,26 @@
         transform : scale(1);
     }
 
+    .filterIcon{
+        float: right;
+    }
+
+    .sideBar{
+        /* display: inline-block;
+        height: 60vh;
+        margin-top: 5%;
+        background: lightGray;
+        padding: 40px;
+        position: fixed;
+        overflow-y: scroll;
+        -ms-overflow-style: none; */
+        display: none;
+    }
+
+    .showSideBar{
+        
+    }
+    
     .coursesContainer{
         padding-bottom: 100px;
         width: 100vw;
@@ -124,6 +165,10 @@
         position: fixed;
         overflow-y: scroll;
         -ms-overflow-style: none;
+    }
+
+    .filterIcon{
+        display: none;
     }
 
     ::-webkit-scrollbar {
