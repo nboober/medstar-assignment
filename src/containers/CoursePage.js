@@ -1,6 +1,28 @@
 import React from 'react'
 
 class CoursePage extends React.Component{
+    constructor(){
+        super();
+        this.state={
+            page: 0
+        }
+    }
+
+    pageTurner = (direction) => {
+        let newPage = this.state.page += direction;
+
+        if(newPage > this.props.info.courseType.book.length-1){
+            newPage = 0
+        }else if(newPage < 0){
+            newPage = this.props.info.courseType.book.length-1;
+        }
+
+        this.setState({
+            page: newPage
+        })
+
+    }
+
     render(){
         return(
             <>
@@ -13,9 +35,21 @@ class CoursePage extends React.Component{
                         <p style={{marginTop: '2%'}}>
                             {this.props.info.description}
                         </p>
-                        <button id="signUpButton" className="btn btn-primary">
-                            Sign Up
-                        </button>
+
+                        {this.props.info.courseType.video !== "n/a" ? <video width="640" height="480" controls>
+                                                    <source src="movie.mp4" type="video/mp4" />
+                                                    <source src="movie.ogg" type="video/ogg" />
+                                                    Your browser does not support the video tag.
+                                                    </video> : null}
+
+                        {this.props.info.courseType.book !== "n/a" ? 
+                        <div>
+                            <p>{this.props.info.courseType.book[this.state.page]}</p>
+                            <button onClick={() => this.pageTurner(-1)}>Previous Page</button>
+                            <button onClick={() => this.pageTurner(1)}>Next Page</button>
+                        </div>
+                        :null}
+
 
                     </div>
                 : null}
