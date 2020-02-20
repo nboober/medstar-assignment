@@ -37,12 +37,13 @@
     }
 
     footer {
-        position: fixed;
+        /* position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         color: white;
-        text-align: center;
+        text-align: center; */
+        display: hidden;
     }
 }
 
@@ -90,12 +91,13 @@
     }
 
     footer {
-        position: fixed;
+        /* position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         color: white;
-        text-align: center;
+        text-align: center; */
+        display: hidden;
     }
 }
 
