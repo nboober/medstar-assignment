@@ -13,7 +13,7 @@ let courses = [
         id: 2,
         "title": "Course 2",
         "filter": ["easy", "fun course", "book"],
-        "description": "Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et.",
+        "description": "Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et.  Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales.",
         courseType:{
             video: "n/a",
             book: [
@@ -114,7 +114,7 @@ let courses = [
         id: 10,
         "title": "Course 10",
         "filter": ["tutorial", "php course","book"],
-        "description": "Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum..",
+        "description": "Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales.",
         courseType:{
             video: "n/a",
             book: [
