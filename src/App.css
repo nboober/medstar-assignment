@@ -42,6 +42,24 @@
         padding-bottom: 100px;
     }
 
+    .description{
+        font-size: .8rem;
+    }
+
+    .book{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .pageTurnerButtons{
+        text-align: center;
+    }
+
+    .video{
+        width: 100%;
+        height: auto; 
+    }
+
     #signUpButton{
         margin-bottom: 5%;
         margin-left: 35%;
@@ -95,6 +113,24 @@
     .coursePage{
         margin-top: 15%;
         padding-bottom: 100px;
+    }
+
+    .description{
+        font-size: 1.5rem;
+    }
+
+    .book{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .pageTurnerButtons{
+        text-align: center;
+    }
+
+    .video{
+        width: 100%;
+        height: auto; 
     }
 
     .coursePage h2{
@@ -184,10 +220,18 @@
         margin-top: 5%;
     }
 
-    #signUpButton{
-        width: 150px;
+    .book{
+        width: 80%;
         margin: 0 auto;
-        margin-top: 2%;
+    }
+    
+    .pageTurnerButtons{
+        text-align: center;
+    }
+
+    .video{
+        width: 60%;
+        height: auto; 
     }
 
     footer {
