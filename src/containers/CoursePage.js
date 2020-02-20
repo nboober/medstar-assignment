@@ -32,18 +32,22 @@ class CoursePage extends React.Component{
                             {this.props.info.title}
                         </h2>
                         <hr/>
-                        <p style={{marginTop: '2%'}}>
+                        <h4>Description:</h4>
+                        <p>
                             {this.props.info.description}
                         </p>
 
-                        {this.props.info.courseType.video !== "n/a" ? <video width="640" height="480" controls>
-                                                    <source src="movie.mp4" type="video/mp4" />
-                                                    <source src="movie.ogg" type="video/ogg" />
-                                                    Your browser does not support the video tag.
-                                                    </video> : null}
+                        {this.props.info.courseType.video !== "n/a" ? 
+                        
+                            <video className="video" width="100%" height="auto" controls>
+                                <source src="movie.mp4" type="video/mp4" />
+                                <source src="movie.ogg" type="video/ogg" />
+                                Your browser does not support the video tag.
+                            </video> 
+                        : null}
 
                         {this.props.info.courseType.book !== "n/a" ? 
-                        <div>
+                        <div className="book">
                             <p>{this.props.info.courseType.book[this.state.page]}</p>
                             <button onClick={() => this.pageTurner(-1)}>Previous Page</button>
                             <button onClick={() => this.pageTurner(1)}>Next Page</button>
