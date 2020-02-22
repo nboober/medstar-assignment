@@ -15,7 +15,7 @@ class NavBar extends React.Component{
                       Options Menu
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Login</a>
+                      <Link class="dropdown-item" to="/login" >Login</Link>
                       <a class="dropdown-item" href="#">Register</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Contact Us</a>
