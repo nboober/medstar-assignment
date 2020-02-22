@@ -366,12 +366,39 @@
         width: 100%;
     }
 
-    .instContainer{
+    .list-group-item p{
         display: none;
     }
 
-    .list-group-item p{
-        display: none;
+    .instContainer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+        /* margin: 0 auto; */
+    }
+
+    .profile {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: auto;
+        text-align: center;
+        display: inline-block;
+        height: 400px;
+        width: 300px;
+        margin: 20px;
+    }
+
+    .profile img{
+        width: auto;
+        height: 50%;
+        border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        border: 0px solid #000000;
+    }
+        
+    .title {
+        color: grey;
+        font-size: 18px;
     }
 
     footer {
