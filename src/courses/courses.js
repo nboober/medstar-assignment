@@ -7,7 +7,21 @@ let courses = [
         courseType:{
             video: "https://www.youtube.com/watch?v=4xKihjI6HJ0",
             book: "n/a"
-        }
+        },
+        instructors: [
+            {
+                name: "Nick Alexander",
+                description: "3 years Experience on this topic.",
+                email: "nalex@gmail.com",
+                image: "https://www.milkeneducatorawards.org/assets/Person/_resampled/TopCroppedImageWyIzMDAiLCI0MDAiXQ-2019-MI-Nick-Peruski-bio-3x4.jpg"
+            },
+            {
+                name: "Timmy Turner",
+                description: "2 years experience on this topic.",
+                email: "tturner@gmail.com",
+                image: "https://www.nydailynews.com/resizer/aigQ_oh-3t5wMMtglaFT6q4xIko=/448x336/top/s3.amazonaws.com/arc-authors/tronc/582bf652-3fff-475d-b02a-868edeb9acc0.png"
+            }
+        ]
     },
     {
         id: 2,
@@ -24,7 +38,29 @@ let courses = [
                 "Page 3 text. Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et. Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales. Urna proin viverra consectetur torquent elit nascetur maecenas duis lectus, semper natoque dignissim. Fringilla sed blandit vitae felis non lobortis per justo conubia porta. Parturient nascetur in duis, consequat non neque tellus sem! Penatibus cum tincidunt at! Mattis scelerisque molestie at blandit. Tempus urna malesuada velit vivamus libero eu, molestie scelerisque lobortis consectetur. Consectetur facilisis molestie convallis. Montes cursus himenaeos arcu lacus metus sit parturient dictum conubia nullam condimentum. Cum, condimentum felis ante ante libero iaculis class quam phasellus. Mi habitasse sodales netus tellus praesent adipiscing euismod nam ad scelerisque. Magna, gravida class fermentum sem a ornare aenean curabitur nisl ullamcorper quisque. Dis, et leo sagittis quisque habitant lacinia. Blandit, fringilla torquent in tristique pellentesque. Ipsum eleifend facilisi senectus viverra blandit nisl sem turpis. Habitant placerat fames?"
             
             ]
-        }
+        },
+        instructors: [
+            {
+                name: "Nick Alexander",
+                description: "3 years Experience on this topic.",
+                email: "nalex@gmail.com",
+                image: "https://www.milkeneducatorawards.org/assets/Person/_resampled/TopCroppedImageWyIzMDAiLCI0MDAiXQ-2019-MI-Nick-Peruski-bio-3x4.jpg"
+
+            },
+            {
+                name: "Timmy Turner",
+                description: "2 years experience on this topic.",
+                email: "tturner@gmail.com",
+                image: "https://www.nydailynews.com/resizer/aigQ_oh-3t5wMMtglaFT6q4xIko=/448x336/top/s3.amazonaws.com/arc-authors/tronc/582bf652-3fff-475d-b02a-868edeb9acc0.png"
+
+            },
+            {
+                name: "Rachel Adams",
+                decription: "8 years experience on this topic.",
+                email: "radams@gmail.com",
+                image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
+            }
+        ]
     },
     {
         id: 3,
@@ -34,7 +70,16 @@ let courses = [
         courseType:{
             video: "https://www.youtube.com/watch?v=4xKihjI6HJ0",
             book: "n/a"
-        }
+        },
+        instructors: [
+            {
+                name: "Rachel Adams",
+                decription: "8 years experience on this topic.",
+                email: "radams@gmail.com",
+                image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
+
+            }
+        ]
     },
     {
         id: 4,
@@ -51,7 +96,30 @@ let courses = [
                 "Page 3 text. Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et. Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales. Urna proin viverra consectetur torquent elit nascetur maecenas duis lectus, semper natoque dignissim. Fringilla sed blandit vitae felis non lobortis per justo conubia porta. Parturient nascetur in duis, consequat non neque tellus sem! Penatibus cum tincidunt at! Mattis scelerisque molestie at blandit. Tempus urna malesuada velit vivamus libero eu, molestie scelerisque lobortis consectetur. Consectetur facilisis molestie convallis. Montes cursus himenaeos arcu lacus metus sit parturient dictum conubia nullam condimentum. Cum, condimentum felis ante ante libero iaculis class quam phasellus. Mi habitasse sodales netus tellus praesent adipiscing euismod nam ad scelerisque. Magna, gravida class fermentum sem a ornare aenean curabitur nisl ullamcorper quisque. Dis, et leo sagittis quisque habitant lacinia. Blandit, fringilla torquent in tristique pellentesque. Ipsum eleifend facilisi senectus viverra blandit nisl sem turpis. Habitant placerat fames?"
             
             ]
-        }
+        },
+        instructors: [
+            {
+                name: "Nick Alexander",
+                description: "3 years Experience on this topic.",
+                email: "nalex@gmail.com",
+                image: "https://www.milkeneducatorawards.org/assets/Person/_resampled/TopCroppedImageWyIzMDAiLCI0MDAiXQ-2019-MI-Nick-Peruski-bio-3x4.jpg"
+
+            },
+            {
+                name: "Timmy Turner",
+                description: "2 years experience on this topic.",
+                email: "tturner@gmail.com",
+                image: "https://www.nydailynews.com/resizer/aigQ_oh-3t5wMMtglaFT6q4xIko=/448x336/top/s3.amazonaws.com/arc-authors/tronc/582bf652-3fff-475d-b02a-868edeb9acc0.png"
+
+            },
+            {
+                name: "Rachel Adams",
+                decription: "8 years experience on this topic.",
+                email: "radams@gmail.com",
+                image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
+
+            }
+        ]
     },
     {
         id: 5,
@@ -61,7 +129,30 @@ let courses = [
         courseType:{
             video: "https://www.youtube.com/watch?v=4xKihjI6HJ0",
             book: "n/a"
-        }
+        },
+        instructors: [
+            {
+                name: "Nick Alexander",
+                description: "3 years Experience on this topic.",
+                email: "nalex@gmail.com",
+                image: "https://www.milkeneducatorawards.org/assets/Person/_resampled/TopCroppedImageWyIzMDAiLCI0MDAiXQ-2019-MI-Nick-Peruski-bio-3x4.jpg"
+
+            },
+            {
+                name: "Timmy Turner",
+                description: "2 years experience on this topic.",
+                email: "tturner@gmail.com",
+                image: "https://www.nydailynews.com/resizer/aigQ_oh-3t5wMMtglaFT6q4xIko=/448x336/top/s3.amazonaws.com/arc-authors/tronc/582bf652-3fff-475d-b02a-868edeb9acc0.png"
+
+            },
+            {
+                name: "Rachel Adams",
+                decription: "8 years experience on this topic.",
+                email: "radams@gmail.com",
+                image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
+
+            }
+        ]
     },
     {
         id: 6,
@@ -71,7 +162,16 @@ let courses = [
         courseType:{
             video: "https://www.youtube.com/watch?v=4xKihjI6HJ0",
             book: "n/a"
-        }
+        },
+        instructors: [
+            {
+                name: "Timmy Turner",
+                description: "2 years experience on this topic.",
+                email: "tturner@gmail.com",
+                image: "https://www.nydailynews.com/resizer/aigQ_oh-3t5wMMtglaFT6q4xIko=/448x336/top/s3.amazonaws.com/arc-authors/tronc/582bf652-3fff-475d-b02a-868edeb9acc0.png"
+
+            }
+        ]
     },
     {
         id: 7,
@@ -88,7 +188,30 @@ let courses = [
                 "Page 3 text. Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et. Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales. Urna proin viverra consectetur torquent elit nascetur maecenas duis lectus, semper natoque dignissim. Fringilla sed blandit vitae felis non lobortis per justo conubia porta. Parturient nascetur in duis, consequat non neque tellus sem! Penatibus cum tincidunt at! Mattis scelerisque molestie at blandit. Tempus urna malesuada velit vivamus libero eu, molestie scelerisque lobortis consectetur. Consectetur facilisis molestie convallis. Montes cursus himenaeos arcu lacus metus sit parturient dictum conubia nullam condimentum. Cum, condimentum felis ante ante libero iaculis class quam phasellus. Mi habitasse sodales netus tellus praesent adipiscing euismod nam ad scelerisque. Magna, gravida class fermentum sem a ornare aenean curabitur nisl ullamcorper quisque. Dis, et leo sagittis quisque habitant lacinia. Blandit, fringilla torquent in tristique pellentesque. Ipsum eleifend facilisi senectus viverra blandit nisl sem turpis. Habitant placerat fames?"
             
             ]
-        }
+        },
+        instructors: [
+            {
+                name: "Nick Alexander",
+                description: "3 years Experience on this topic.",
+                email: "nalex@gmail.com",
+                image: "https://www.milkeneducatorawards.org/assets/Person/_resampled/TopCroppedImageWyIzMDAiLCI0MDAiXQ-2019-MI-Nick-Peruski-bio-3x4.jpg"
+
+            },
+            {
+                name: "Timmy Turner",
+                description: "2 years experience on this topic.",
+                email: "tturner@gmail.com",
+                image: "https://www.nydailynews.com/resizer/aigQ_oh-3t5wMMtglaFT6q4xIko=/448x336/top/s3.amazonaws.com/arc-authors/tronc/582bf652-3fff-475d-b02a-868edeb9acc0.png"
+
+            },
+            {
+                name: "Rachel Adams",
+                decription: "8 years experience on this topic.",
+                email: "radams@gmail.com",
+                image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
+
+            }
+        ]
     },
     {
         id: 8,
@@ -98,7 +221,23 @@ let courses = [
         courseType:{
             video: "https://www.youtube.com/watch?v=4xKihjI6HJ0",
             book: "n/a"
-        }
+        },
+        instructors: [
+            {
+                name: "Nick Alexander",
+                description: "3 years Experience on this topic.",
+                email: "nalex@gmail.com",
+                image: "https://www.milkeneducatorawards.org/assets/Person/_resampled/TopCroppedImageWyIzMDAiLCI0MDAiXQ-2019-MI-Nick-Peruski-bio-3x4.jpg"
+
+            },
+            {
+                name: "Timmy Turner",
+                description: "2 years experience on this topic.",
+                email: "tturner@gmail.com",
+                image: "https://www.nydailynews.com/resizer/aigQ_oh-3t5wMMtglaFT6q4xIko=/448x336/top/s3.amazonaws.com/arc-authors/tronc/582bf652-3fff-475d-b02a-868edeb9acc0.png"
+
+            }
+        ]
     },
     {
         id: 9,
@@ -108,7 +247,16 @@ let courses = [
         courseType:{
             video: "https://www.youtube.com/watch?v=4xKihjI6HJ0",
             book: "n/a"
-        }
+        },
+        instructors: [
+            {
+                name: "Rachel Adams",
+                decription: "8 years experience on this topic.",
+                email: "radams@gmail.com",
+                image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
+
+            }
+        ]
     },
     {
         id: 10,
@@ -125,7 +273,16 @@ let courses = [
                 "Page 3 text. Himenaeos lacinia libero ante mollis imperdiet porttitor erat euismod suspendisse bibendum. Dictumst class laoreet sagittis sem cubilia condimentum aptent dolor? Sit dapibus, habitant et. Aliquet faucibus vehicula a senectus aenean netus posuere adipiscing nisl adipiscing laoreet maecenas. Vivamus posuere vulputate tristique cubilia scelerisque porttitor tempus erat. Inceptos blandit gravida, arcu sodales. Urna proin viverra consectetur torquent elit nascetur maecenas duis lectus, semper natoque dignissim. Fringilla sed blandit vitae felis non lobortis per justo conubia porta. Parturient nascetur in duis, consequat non neque tellus sem! Penatibus cum tincidunt at! Mattis scelerisque molestie at blandit. Tempus urna malesuada velit vivamus libero eu, molestie scelerisque lobortis consectetur. Consectetur facilisis molestie convallis. Montes cursus himenaeos arcu lacus metus sit parturient dictum conubia nullam condimentum. Cum, condimentum felis ante ante libero iaculis class quam phasellus. Mi habitasse sodales netus tellus praesent adipiscing euismod nam ad scelerisque. Magna, gravida class fermentum sem a ornare aenean curabitur nisl ullamcorper quisque. Dis, et leo sagittis quisque habitant lacinia. Blandit, fringilla torquent in tristique pellentesque. Ipsum eleifend facilisi senectus viverra blandit nisl sem turpis. Habitant placerat fames?"
             
             ]
-        }
+        },
+        instructors: [
+            {
+                name: "Nick Alexander",
+                description: "3 years Experience on this topic.",
+                email: "nalex@gmail.com",
+                image: "https://www.milkeneducatorawards.org/assets/Person/_resampled/TopCroppedImageWyIzMDAiLCI0MDAiXQ-2019-MI-Nick-Peruski-bio-3x4.jpg"
+
+            }
+        ]
     }
 ]
 
