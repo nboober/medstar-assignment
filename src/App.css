@@ -9,11 +9,11 @@
 }
 
 .center form {
-margin: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .filterIcon{
@@ -40,7 +40,19 @@ transform: translate(-50%, -50%);
 
 /* Phone Straight */
 @media only screen and (max-width: 413px) {
-    
+
+    .center-register{
+        margin-top: 10%;
+    }
+
+    .center{
+        margin-top: 15%;
+    }
+
+    .center-contact{
+        margin-top: 80%;
+    }
+
     .dropdown-menu{
         font-size: 3rem;
     }
@@ -174,6 +186,18 @@ transform: translate(-50%, -50%);
 
 /* Phone Sideways*/
 @media only screen and (min-width: 414px) and (max-width: 767px) {
+
+    .center{
+        margin-top: 15%;
+    }
+
+    .center-register{
+        margin-top: 20%;
+    }
+
+    .center-contact{
+        margin-top: 60%;
+    }
 
     .dropdown-menu{
         font-size: 3rem;
@@ -309,6 +333,18 @@ transform: translate(-50%, -50%);
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1699px) {
+
+    .center{
+        margin-top: 15%;
+    }
+
+    .center-register{
+        margin-top: 10%;
+    }
+
+    .center-contact{
+        margin-top: 20%;
+    }
 
     .dropdown-item{
         font-size: 3rem;

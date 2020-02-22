@@ -3,7 +3,7 @@ import React from 'react';
 class ContactUs extends React.Component{
     render(){
         return(
-            <div className="center">
+            <div className="center center-contact">
                 <form>
                     <div style={{textAlign: "center"}}>
                         <h3>
