@@ -24,6 +24,7 @@ class CoursePage extends React.Component{
                                 <Video/>
 
                                 <div className="instContainer">
+                                    <h2>Your Instructors</h2>
                                     {this.props.info.instructors.length > 0 ? this.props.info.instructors.map(instructor => {
                                         return <Instructor instructor={instructor} />
                                     }) : null}
@@ -37,11 +38,12 @@ class CoursePage extends React.Component{
                                 <Book info={this.props.info}/>
 
                                 <div className="instContainer">
+                                    <h2>Your Instructors</h2>
                                     {this.props.info.instructors.length > 0 ? this.props.info.instructors.map(instructor => {
                                         return <Instructor instructor={instructor} />
                                     }) : null}
                                 </div>
-                                
+
                             </>
                         :null}
 
