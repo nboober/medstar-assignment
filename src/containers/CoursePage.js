@@ -55,8 +55,8 @@ class CoursePage extends React.Component{
                             <p>{this.props.info.courseType.book[this.state.page]}</p>
 
                             <div className="pageTurnerButtons">
-                                <button onClick={() => this.pageTurner(-1)}>Previous Page</button>
-                                <button onClick={() => this.pageTurner(1)}>Next Page</button>
+                                <button className="btn btn-primary" onClick={() => this.pageTurner(-1)}>Previous Page</button>
+                                <button className="btn btn-primary" onClick={() => this.pageTurner(1)}>Next Page</button>
                             </div>
                         </div>
                         :null}
