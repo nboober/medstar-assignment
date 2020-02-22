@@ -3,6 +3,15 @@
     padding: 5px;
 }
 
+.oswalt-font{
+    font-family: 'Oswalt' ;
+}
+
+.book p{
+    background-color: lightgray;
+    padding: 30px;
+}
+
 /* Phone */
 @media only screen and (max-width: 767px) {
 
@@ -277,7 +286,6 @@
 
     .book p{
         border: 1px solid black;
-        padding: 30px;
     }
     
     .pageTurnerButtons{

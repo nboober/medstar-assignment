@@ -52,7 +52,7 @@ class CoursePage extends React.Component{
                         {this.props.info.courseType.book !== "n/a" ? 
                         <div className="book">
 
-                            <p>{this.props.info.courseType.book[this.state.page]}</p>
+                            <p className="oswalt-font">{this.props.info.courseType.book[this.state.page]}</p>
 
                             <div className="pageTurnerButtons">
                                 <button className="btn btn-primary" onClick={() => this.pageTurner(-1)}>Previous Page</button>
