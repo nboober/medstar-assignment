@@ -1,5 +1,6 @@
 import React from 'react'
 import Book from '../components/Book'
+import Video from '../components/Video'
 
 class CoursePage extends React.Component{
 
@@ -19,18 +20,14 @@ class CoursePage extends React.Component{
 
                         {this.props.info.courseType.video !== "n/a" ? 
 
-                        <div className="videoContainer">
-                            <video className="video" controls>
-                                <source src="movie.mp4" type="video/mp4" />
-                                <source src="movie.ogg" type="video/ogg" />
-                                Your browser does not support the video tag.
-                            </video> 
-                        </div>
+                            <Video/>
 
                         : null}
 
                         {this.props.info.courseType.book !== "n/a" ? 
+
                             <Book info={this.props.info}/>
+                        
                         :null}
 
 
