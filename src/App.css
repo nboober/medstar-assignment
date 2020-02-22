@@ -1,3 +1,8 @@
+.filterIcon{
+    background-color: orange;
+    padding: 5px;
+}
+
 /* Phone */
 @media only screen and (max-width: 767px) {
 
@@ -26,8 +31,14 @@
     }
 
     .filterIcon{
-        float: right;
+        width:50px;
+        margin:40px ;     
+        position: absolute;
+        right:0;          
+        top:50px;           
+        text-align:right;
     }
+
     
     .sideBar{
         display: none;
@@ -74,7 +85,8 @@
     }
 
     footer {
-        display: none;
+        /* display: none; */
+        position: sticky;
     }
 }
 
@@ -110,9 +122,12 @@
     }
 
     .filterIcon{
-        float: right;
-        margin-top: 20px;
-
+        width:100px;
+        margin:50px ;     
+        position: absolute;
+        right:0;          
+        top:50px;           
+        text-align:right;
     }
 
     .sideBar{
