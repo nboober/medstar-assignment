@@ -3,6 +3,7 @@ import {Switch,Route} from 'react-router-dom'
 import allCourses from './courses/courses'
 import Login from './components/Login'
 import Register from './components/Register'
+import ContactUs from './components/ContactUs'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
@@ -140,6 +141,10 @@ class App extends React.Component{
 
           <Route exact path="/register" render={()=>{
             return <Register/>
+          }}/>
+          
+          <Route exact path="/contact" render={()=>{
+            return <ContactUs/>
           }}/>
 
           <Route exact path='/' render={()=>{
