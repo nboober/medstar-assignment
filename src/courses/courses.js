@@ -56,7 +56,7 @@ let courses = [
             },
             {
                 name: "Rachel Adams",
-                decription: "8 years experience on this topic.",
+                description: "8 years experience on this topic.",
                 email: "radams@gmail.com",
                 image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
             }
@@ -74,7 +74,7 @@ let courses = [
         instructors: [
             {
                 name: "Rachel Adams",
-                decription: "8 years experience on this topic.",
+                description: "8 years experience on this topic.",
                 email: "radams@gmail.com",
                 image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
 
@@ -114,7 +114,7 @@ let courses = [
             },
             {
                 name: "Rachel Adams",
-                decription: "8 years experience on this topic.",
+                description: "8 years experience on this topic.",
                 email: "radams@gmail.com",
                 image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
 
@@ -147,7 +147,7 @@ let courses = [
             },
             {
                 name: "Rachel Adams",
-                decription: "8 years experience on this topic.",
+                description: "8 years experience on this topic.",
                 email: "radams@gmail.com",
                 image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
 
@@ -206,7 +206,7 @@ let courses = [
             },
             {
                 name: "Rachel Adams",
-                decription: "8 years experience on this topic.",
+                description: "8 years experience on this topic.",
                 email: "radams@gmail.com",
                 image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
 
@@ -251,7 +251,7 @@ let courses = [
         instructors: [
             {
                 name: "Rachel Adams",
-                decription: "8 years experience on this topic.",
+                description: "8 years experience on this topic.",
                 email: "radams@gmail.com",
                 image: "https://simonsfoundation.imgix.net/wp-content/uploads/2016/12/01152650/N4A7974.jpg?auto=format&q=90"
 

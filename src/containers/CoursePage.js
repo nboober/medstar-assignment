@@ -22,18 +22,26 @@ class CoursePage extends React.Component{
                         {this.props.info.courseType.video !== "n/a" ? 
                             <>
                                 <Video/>
-                                {this.props.info.instructors.length > 0 ? this.props.info.instructors.map(instructor => {
-                                    return <Instructor instructor={instructor} />
-                                }) : null}
+
+                                <div className="instContainer">
+                                    {this.props.info.instructors.length > 0 ? this.props.info.instructors.map(instructor => {
+                                        return <Instructor instructor={instructor} />
+                                    }) : null}
+                                </div>
+
                             </>
                         : null}
 
                         {this.props.info.courseType.book !== "n/a" ? 
                             <>
                                 <Book info={this.props.info}/>
-                                {this.props.info.instructors.length > 0 ? this.props.info.instructors.map(instructor => {
-                                    return <Instructor instructor={instructor} />
-                                }) : null}
+
+                                <div className="instContainer">
+                                    {this.props.info.instructors.length > 0 ? this.props.info.instructors.map(instructor => {
+                                        return <Instructor instructor={instructor} />
+                                    }) : null}
+                                </div>
+                                
                             </>
                         :null}
 
