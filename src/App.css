@@ -3,6 +3,19 @@
     font-family: 'Oswalt' ;
 }
 
+.center {
+    height: 100vh;
+    position: relative;
+}
+
+.center form {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
 .filterIcon{
     background-color: orange;
     padding: 5px;
@@ -460,19 +473,6 @@
 
 /* Desktop */
 @media only screen and (min-width: 1700px) {
-
-    .center {
-        height: 100vh;
-        position: relative;
-    }
-    
-    .center form {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
 
     #navbarSupportedContent{
         width: 85%;
