@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Login extends React.Component{
+class Register extends React.Component{
     render(){
         return(
             <div className="center">
@@ -15,11 +15,15 @@ class Login extends React.Component{
                         <label htmlFor="InputPassword">Password</label>
                         <input type="password" className="form-control" id="InputPassword" placeholder="Password"/>
                     </div>
-                    <div className="form-check">
-                        <input type="checkbox" className="form-check-input" id="check"/>
-                        <label className="form-check-label" htmlFor="check">Remember Me</label>
+                    <div className="form-group">
+                        <label htmlFor="InputPasswordConfirm">Confirm Password</label>
+                        <input type="password" className="form-control" id="InputPasswordConfirm" placeholder="Password"/>
                     </div>
-                    <button type="submit" className="btn btn-primary">Login</button>
+                    <div className="form-check">
+                        <input type="checkbox" className="form-check-input" id="Check"/>
+                        <label className="form-check-label" htmlFor="Check">Remember Me</label>
+                    </div>
+                    <button type="submit" className="btn btn-primary">Register</button>
                 </form>
 
             </div>
@@ -27,4 +31,4 @@ class Login extends React.Component{
     }
 }
 
-export default Login
+export default Register
