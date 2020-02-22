@@ -8,7 +8,7 @@ class NavBar extends React.Component{
               <Link className="navbar-brand" to="/">
                 <img src="https://www.medstarhealth.org/content/themes/medstarhealth-specialty-parent/assets/img/logo.png" alt="medstar logo"/>
               </Link>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <div class="" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto" >
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
