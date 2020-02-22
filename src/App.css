@@ -1,3 +1,8 @@
+/* Global */
+.oswalt-font{
+    font-family: 'Oswalt' ;
+}
+
 .filterIcon{
     background-color: orange;
     padding: 5px;
@@ -13,10 +18,6 @@
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid #000000;
-}
-
-.oswalt-font{
-    font-family: 'Oswalt' ;
 }
 
 .book p{
@@ -264,6 +265,14 @@
 
 /* Desktop */
 @media only screen and (min-width: 1700px) {
+
+    #navbarSupportedContent{
+        width: 85%;
+    }
+    
+    #navbarSupportedContent ul{
+        float: right;
+    }
 
     .appBody{
         width: 80%;
