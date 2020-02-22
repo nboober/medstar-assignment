@@ -1,6 +1,18 @@
 .filterIcon{
     background-color: orange;
     padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+.viewAlternateButton{
+    background-color: orange;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
 }
 
 .oswalt-font{
@@ -32,24 +44,25 @@
     }
     
     .appBody{
-        margin-top: 25%;        
+        margin-top: 30%;        
     }
 
     input.form-check-input{
         transform : scale(1);
     }
 
-    .filterIcon{
-        width:50px;
-        margin:40px ;     
+    .buttonDiv{
+        width:100vw;
+        margin:50px ;     
         position: absolute;
         right:0;          
         top:50px;           
         text-align:right;
-        border-radius: 10px 10px 10px 10px;
-        -moz-border-radius: 10px 10px 10px 10px;
-        -webkit-border-radius: 10px 10px 10px 10px;
-        border: 0px solid #000000;
+    }  
+    
+    .filterIcon{
+        width:50px;
+        margin-left: 10px;
     }
 
     
@@ -125,7 +138,6 @@
 
     input.form-check-input{
         transform : scale(3);
-        /* float: left; */
         margin-left: 40px;
     }
     
@@ -134,17 +146,28 @@
         margin-left: 70px;
     }
 
-    .filterIcon{
-        width:100px;
+    .buttonDiv{
+        width:100vw;
         margin:50px ;     
         position: absolute;
         right:0;          
         top:50px;           
         text-align:right;
+    }  
+
+    .viewAlternateButton{
+        background-color: orange;
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
         -webkit-border-radius: 10px 10px 10px 10px;
         border: 0px solid #000000;
+    }
+
+    .filterIcon{
+        width:100px;
+        margin-left: 20px;
+        /* margin:50px ;      */
+        
     }
 
     .sideBar{
@@ -246,7 +269,21 @@
 
     ::-webkit-scrollbar {
         display: none;
-      }
+    }
+
+    .buttonDiv{
+        width:100vw;
+        margin:50px ;     
+        position: absolute;
+        right:150px;          
+        top:50px;           
+        text-align:right;
+    }  
+
+    .viewAlternateButton:hover{
+        background-color: lightgray;
+        border: 1px solid orange;
+    }
 
     .coursesContainer{
         height: 100%;

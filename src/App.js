@@ -122,7 +122,10 @@ class App extends React.Component{
           <Route exact path='/' render={()=>{
             return <div className="appBody" >
 
-                    <img className="filterIcon" src="https://www.freeiconspng.com/uploads/filter-icon-0.png" width="45px" alt="filter icon" onClick={this.showHideSideBar} />
+                    <div className="buttonDiv">
+                      <button className="viewAlternateButton">List/ Box View</button>
+                      <img className="filterIcon" src="https://www.freeiconspng.com/uploads/filter-icon-0.png" width="45px" alt="filter icon" onClick={this.showHideSideBar} />
+                    </div>
 
                       <div id="sidebar" className="sideBar">
                         <SearchBar search={this.searchCourses}/>
