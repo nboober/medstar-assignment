@@ -88,6 +88,18 @@
         padding-bottom: 100px;
     }
 
+    .list-group-item h2{
+        text-align: center;
+        margin-right: 50px;
+        display: inline-block;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .list-group-item p{
+        display: none;
+    }
+
     .description{
         font-size: .8rem;
     }
@@ -232,6 +244,18 @@
         overflow-y: hidden;
         font-size: 2rem;
     }
+    
+    .list-group-item h2{
+        text-align: center;
+        margin-right: 50px;
+        display: inline-block;
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .list-group-item p{
+        display: none;
+    }
 
     footer {
         display: none;
@@ -299,14 +323,28 @@
         margin: 10px;
     }
 
+    .list-group-item h2{
+        text-align: left;
+        margin-right: 50px;
+        display: inline-block;
+    }
+
+    .list-group-item p{
+        width: 70%;
+        text-align: right;
+        display: inline-block;
+    }
 
     .card:hover{
         background-color: orange !important;
     }
 
+    .list-group-item:hover{
+        background-color: orange !important;
+    }
+
     a:hover{
         text-decoration: none !important;
-        
     }
 
     .coursePage{
