@@ -37,6 +37,10 @@
         right:0;          
         top:50px;           
         text-align:right;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;
     }
 
     
@@ -128,6 +132,10 @@
         right:0;          
         top:50px;           
         text-align:right;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;
     }
 
     .sideBar{
