@@ -25,9 +25,9 @@
     padding: 30px;
 }
 
-/* Phone */
-@media only screen and (max-width: 767px) {
-
+/* Phone Straight */
+@media only screen and (max-width: 413px) {
+    
     .dropdown-menu{
         font-size: 3rem;
     }
@@ -45,7 +45,7 @@
     }
     
     .appBody{
-        margin-top: 30%;        
+        margin-top: 40%;        
     }
 
     input.form-check-input{
@@ -57,7 +57,7 @@
         margin:50px ;     
         position: absolute;
         right:0;          
-        top:50px;           
+        top:90px;           
         text-align:right;
     }  
     
@@ -85,7 +85,7 @@
     }
     
     .coursePage{
-        margin-top: 20%;
+        margin-top: 35%;
         padding-bottom: 100px;
     }
 
@@ -124,8 +124,112 @@
     }
 
     footer {
-        /* display: none; */
-        position: sticky;
+        display: none;
+        /* position: sticky; */
+    }
+}
+
+/* Phone Sideways*/
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+
+    .dropdown-menu{
+        font-size: 3rem;
+    }
+
+    .dropdown-item{
+        font-size: 2rem;
+    }
+
+    body{
+        width: 100vw;
+    }
+
+    label{
+        font-size: 1.5rem;
+    }
+    
+    .appBody{
+        margin-top: 40%;        
+    }
+
+    input.form-check-input{
+        transform : scale(1);
+    }
+
+    .buttonDiv{
+        width:100vw;
+        margin:50px ;     
+        position: absolute;
+        right:0;          
+        top:90px;           
+        text-align:right;
+    }  
+    
+    .filterIcon{
+        width:50px;
+        margin-left: 10px;
+    }
+
+    
+    .sideBar{
+        display: none;
+    }
+
+    .showSideBar{
+        
+    }
+
+    .coursesContainer{
+        padding-bottom: 100px;
+    }
+
+    .course{
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .coursePage{
+        margin-top: 15%;
+        padding-bottom: 50px;
+    }
+
+    .list-group-item h2{
+        text-align: center;
+        margin-right: 50px;
+        display: inline-block;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .list-group-item p{
+        display: none;
+    }
+
+    .description{
+        font-size: .8rem;
+    }
+
+    .book{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .pageTurnerButtons{
+        text-align: center;
+    }
+
+    .btn{
+        margin: 10px;
+    }
+
+    .video{
+        width: 100%;
+        height: auto; 
+    }
+
+    footer {
+        display: none;
+        /* position: sticky; */
     }
 }
 
@@ -202,7 +306,7 @@
     }
     
     .coursePage{
-        margin-top: 7%;
+        margin-top: 9%;
         padding-bottom: 100px;
     }
 
