@@ -292,6 +292,10 @@
         text-align: center;
     }
 
+    .btn{
+        margin: 10px;
+    }
+
     .videoContainer{
         width: 100%;
         text-align: center;
