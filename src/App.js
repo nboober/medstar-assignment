@@ -17,7 +17,8 @@ class App extends React.Component{
       numberOfFilters: "",
       filterTerms: [],
       courses: allCourses,
-      selectedCourse: ""
+      selectedCourse: "",
+      viewType: "box"
     }
   }
 
@@ -111,6 +112,18 @@ class App extends React.Component{
     })
   }
 
+  changeViewType = () => {
+    if(this.state.viewType === "box"){
+      this.setState({
+        viewType: "list"
+      })
+    }else{
+      this.setState({
+        viewType: "box"
+      })
+    }
+  }
+
   render(){
     return(
       <>
@@ -123,7 +136,7 @@ class App extends React.Component{
             return <div className="appBody" >
 
                     <div className="buttonDiv">
-                      <button className="viewAlternateButton">List/ Box View</button>
+                      <button className="viewAlternateButton" onClick={this.changeViewType}>List/ Box View</button>
                       <img className="filterIcon" src="https://www.freeiconspng.com/uploads/filter-icon-0.png" width="45px" alt="filter icon" onClick={this.showHideSideBar} />
                     </div>
 
