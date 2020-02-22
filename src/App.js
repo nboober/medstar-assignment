@@ -147,7 +147,7 @@ class App extends React.Component{
 
                       <h2 className="courseTitle">Courses</h2>
                       <div className="coursesContainer">
-                        <CourseContainer courses={this.state.courses ? this.state.courses.filter((course)=>{
+                        <CourseContainer viewType={this.state.viewType} courses={this.state.courses ? this.state.courses.filter((course)=>{
                           return course.title.toLowerCase().includes(this.state.searchTerm.toLowerCase())
                         }):null} view={this.viewSelectedCourse}/>
                       </div>
